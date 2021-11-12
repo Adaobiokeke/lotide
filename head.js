@@ -7,6 +7,7 @@ const assertEqual = function (actual, expected) {
 };
 
 
+
 function head(headARR) {
   return headARR[0];
 }
