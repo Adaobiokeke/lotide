@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "lodash.without": "^4.4.0",
+    "underscore": "^1.13.1"
+  }
+}

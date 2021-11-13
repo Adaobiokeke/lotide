@@ -24,11 +24,10 @@ const countOnly = function (allItems, itemsToCount) {
       } else {
         results[item] = 1;
       }
-      console.log(item);
     }
-
-    return results;
   }
+  console.log(results);
+  return results;
 };
 
 const result1 = countOnly(firstNames, {
@@ -40,12 +39,9 @@ const result1 = countOnly(firstNames, {
 
 // TEST CODE
 
-assertEqual(result1["Jason"], 1);
-assertEqual(result1["Karima"], undefined);
+assertEqual(result1["Jason"], 1)
+assertEqual(result1["Karima"], undefined)
 assertEqual(result1["Fang"], 2);
 assertEqual(result1["Agouhanna"], undefined);
 
-// console.assert(assertEqual(4 ,4), "this is correct")
-// console.assert(assertEqual("1",5), "Absolutely wrong")
-// console.assert(assertEqual("Lighthouse Labs", "Bootcamp"), "this is wrong")
-// console.assert(assertEqual("Lighthouse Labs", "Lighthouse Labs"), "this is right")
+

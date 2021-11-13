@@ -1,6 +1,14 @@
-// import _, { map } from 'underscore';
+var _ = require('underscore')
 
-function eqArrays(arr1, arr2) {
+const assertEqual = function (actual, expected) {
+    if (actual === expected) {
+      console.log("✅ " + " true");
+    } else {
+      console.log("🛑 " + " false");
+    }
+  };
+
+  function eqArrays(arr1, arr2) {
     //check if the length of the arrays are equal
     if (arr1.length !== arr2.length){
         return false;
@@ -17,18 +25,22 @@ function eqArrays(arr1, arr2) {
 
     return true;
 }
-
-const words = ["hello", "world", "lighthouse"];
-function assertArraysEqual(array,values) {
-    if (values === "lighthouse"){
-          return _.without (array(values))
+  function assertArraysEqual(arr1, arr2) {
+    if (eqArrays(arr1, arr2)) {
+        console.log(`Assertion Passed:array ${arr1} matches array ${arr2}`);
+    } else {
+        console.log(`Assertion Failed:array ${arr1} does not match array ${arr2}`);
     }
 }
+function without(arr,values){
 
+    console.log(_.without(arr,...values));
+
+}
+  // TEST CODE
+//   assertArraysEqual([1,2,0], [1, 2, 3]);
+without([1, 2, 3], [1]) // => [2, 3]
+without(["1", "2", "3"], [1, 2, '3']) // => ["1", "2"]
   
-// TEST CODE
-// assertArraysEqual([1,2,0], [1, 2, 3]);
-assertArraysEqual(words, ["hello", "world", "lighthouse"], 'lighthouse');
-
-
-
+  
+  
