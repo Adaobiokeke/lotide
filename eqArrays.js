@@ -24,7 +24,7 @@ function eqArrays(arr1, arr2) {
 
     return true;
 }
-// eqArrays([1, 2, 3], [1, 2, 3])
+
 // TEST CODE
 assertEqual(eqArrays([1, 2, 3], [1, 2, 3]), true);
 
