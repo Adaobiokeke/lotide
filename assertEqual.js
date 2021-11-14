@@ -1,5 +1,5 @@
-const assertEqual = function(a, b) {
-return a === b
+const assertEqual = function(actual, expected) {
+return actual === expected
 };
 
 
