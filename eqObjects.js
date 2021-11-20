@@ -15,7 +15,7 @@ const eqObjects = function (object1, object2) {
     return (
         Object.keys(object1).length === Object.keys(object2).length &&
         Object.entries(object1).every(([key, value]) => {
-            if (typeof value === "object") {
+            if (typeof value === "object")  {
                 return eqObjects(value, object2[key]);
             }
             return key in object2 && object2[key] === value;
