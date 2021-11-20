@@ -1,10 +1,4 @@
-const assertEqual = function (actual, expected) {
-  if (actual === expected) {
-    console.log("✅ " + " true");
-  } else {
-    console.log("🛑 " + " false");
-  }
-};
+const assertEqual =require('./assertEqual');
 
 
 function eqArrays(arr1, arr2) {
@@ -24,8 +18,8 @@ function eqArrays(arr1, arr2) {
 
     return true;
 }
-
+module.exports =eqArrays
 // TEST CODE
-assertEqual(eqArrays([1, 2, 3], [1, 2, 3]), true);
+
 
 
