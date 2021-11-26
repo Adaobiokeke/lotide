@@ -4,4 +4,4 @@ function head(headARR) {
   return headARR[0];
 }
 
-module.exports = head
+module.exports = head;
